@@ -1,5 +1,5 @@
 <?php
-//echo '<link rel="stylesheet" type ="text/css" href = ../styles/style.css"/>';
+echo '<link rel="stylesheet" type ="text/css" href = ../styles/style.css"/>';
 if($page == "adduser"){
     ?>
         <div class = "form">
