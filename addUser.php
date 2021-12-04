@@ -27,6 +27,8 @@ if($page == "adduser"){
                 <label for= "Email"> *Email: </label>
                 <input type= "email" name="email" id= "email" placeholder ="kimanimunn@gmail.com" required />
                 <div id="email_is"></div><br>
+
+                <button type= "submit" id= "loginButton" name= "loginButton">Login</button>
             </form>
 
         </diV>
