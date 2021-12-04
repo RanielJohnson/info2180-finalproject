@@ -15,7 +15,7 @@ CREATE TABLE `users` (
 )ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 INSERT INTO `users` (`ID`, `firstname`, `lastname`, `password`, `email`, `date_joined`) VALUES
-(1, 'Raniel', 'Johnson', ('password123'), 'admin@project2.com',  NOW());
+(1, 'Raniel', 'Johnson', 'password123', 'admin@project2.com',  NOW());
 
 DROP TABLE IF EXISTS `issues`;
 CREATE TABLE `issues` (
