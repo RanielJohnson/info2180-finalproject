@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'dbconfig.php';
+require_once 'default.php';
 
 $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
@@ -12,7 +12,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <header>
         <ul>
-            <li><img src="images/bug.png" alt="bug" /></li>
+            <li><img src="images/bug.PNG" alt="bug" /></li>
             <li>
                 <h3>BugMe Issue Tracker</h3>
             </li>
@@ -24,16 +24,16 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div id="sidebar-contents">
             <ul>
                 <li class="sidebar-option" id="home">
-                    <img src="images/home.png" alt="home"/>Home
+                    <img src="images/home.PNG" alt="home"/>Home
                 </li>
                 <li class="sidebar-option" id="user">
-                    <img src="images/new_user.png" alt="new-user"/>Add User
+                    <img src="images/new_user.PNG" alt="new-user"/>Add User
                 </li>
                 <li class="sidebar-option" id="issue">
-                    <img src="images/new_page.png" alt="new-issue"/>New Issue
+                    <img src="images/new_page.PNG" alt="new-issue"/>New Issue
                 </li>
                 <li class="sidebar-option" id="logout">
-                    <img src="images/login.png" alt="logout"/>Logout
+                    <img src="images/login.PNG" alt="logout"/>Logout
                 </li>
             </ul>
         </div>
@@ -42,17 +42,17 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <div id="grid-wrapper">
         <main>
             <div class="area">
-                <form id="new-issue" method="post">
+                <form id="add-issue" method="post">
                     <h2>Create Issue</h2>
 
                     <label>Title</label>
-                    <input id="new-issue-title" type="text" name="title" required>
+                    <input id="add-issue-title" type="text" name="title" required>
                     
                     <label>Description</label>
-                    <textarea id="new-issue-desc" id="desc" type="text" name="desc" required></textarea>
+                    <textarea id="add-issue-desc" id="desc" type="text" name="desc" required></textarea>
                     
                     <label>Assigned To</label>
-                    <select id="new-issue-assigned" name="assigned">
+                    <select id="add-issue-assigned" name="assigned">
                     <?php foreach($results as $result){ ?>
                         <option value="<?php echo $result["firstname"]." ".$result["lastname"];?>"><?php echo $result["firstname"]." ".$result["lastname"];?></option>
                     <?php } ?>
@@ -67,7 +67,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                     <label>Priority</label>
                     <select id="add-issue-priority" name="priority">
-                    <option value="Critical">Critical</option>
+                        <option value="Critical">Critical</option>
                         <option value="Major">Major</option>
                         <option value="Minor">Minor</option>
                     </select>
