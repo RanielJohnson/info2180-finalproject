@@ -10,13 +10,14 @@ session_destroy();
     <ul>
         <li><img src="images/bug.png" alt="bug" /></li>
         <li>
-            <h4hb>Issue Tracker</h4>
+            <h4>Issue Tracker</h4>
         </li>
     </ul>
 </header>
 
 <aside>
-    
+
+    <!-- Sidebar -->
     <div id="sidebar-contents">
     </div>
 </aside>
@@ -25,7 +26,7 @@ session_destroy();
     <main>
         <div class="area">
             <form method="post">
-                <h2>User Login</h2>
+                <h3>User Login</h3>
 
                 <label>Email</label>
                 <input id="loginemail" type="email" name="email" placeholder="kimanimunn@gmail.com" required>
