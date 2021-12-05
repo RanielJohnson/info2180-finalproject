@@ -12,9 +12,8 @@
 
     <header>
         <ul>
-            <li><img src="images/bug_report-white-18dp.svg" alt="bug" /></li>
             <li>
-                <h3>BugMe Issue Tracker</h3>
+                <h3><i class="fas fa-bug"></i>BugMe Issue Tracker</h3>
             </li>
         </ul>
     </header>
@@ -120,3 +119,4 @@
     <script>
         $.getScript("js/app.js");
     </script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
