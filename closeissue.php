@@ -1,5 +1,5 @@
 <?php
-require_once 'dbconfig.php';
+require_once 'default.php';
 
 $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 $index = htmlspecialchars(filter_input(INPUT_GET,'index',FILTER_SANITIZE_STRING)); 

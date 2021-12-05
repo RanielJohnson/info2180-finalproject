@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'dbconfig.php';
+require_once 'default.php';
 
 $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
