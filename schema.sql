@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS `bugme`;
+CREATE DATABASE IF NOT EXISTS bugme;
 
-USE `bugme`;
+USE bugme;
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
